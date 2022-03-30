@@ -1,4 +1,4 @@
-# Live the social life responsive webpage
+# Living the social life responsive webpage
 ## Description
 This is a responsive web page. It will automatically switch to a different layout depending on the size of the interface.
 
