@@ -73,22 +73,36 @@ strong {
 
 .container-flex {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 header {
-    /*text-align: center;*/
+    text-align: center;
     background: #f8f8f8;
     padding: 2em 0;
 }
 
-main {
-    width: 70%;
+/* from a minimum width of 675px and bigger */
+@media (min-width: 675px) {
+    .container-flex {
+        flex-direction: row;
+    }
+    main {
+        width: 75%;
+    }
+    aside {
+        width: 20%;
+    }
 }
 
-aside {
-    width: 25%;
-}
+/*main {*/
+/*    width: 70%;*/
+/*}*/
+
+/*aside {*/
+/*    width: 25%;*/
+/*}*/
 
 /*Navigation*/
 
