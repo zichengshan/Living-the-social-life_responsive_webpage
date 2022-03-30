@@ -3,6 +3,11 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 /*Typography*/
 h1,
 h2,
@@ -66,7 +71,7 @@ strong {
     margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
     display: flex;
     justify-content: space-between;
 }
@@ -75,6 +80,14 @@ header {
     /*text-align: center;*/
     background: #f8f8f8;
     padding: 2em 0;
+}
+
+main {
+    width: 70%;
+}
+
+aside {
+    width: 25%;
 }
 
 /*Navigation*/
@@ -111,7 +124,7 @@ nav a:focus {
 }
 
 @media (max-width: 675px) {
-    .container-nav {
+    .container-flex {
         flex-direction: column;
     }
     header {
